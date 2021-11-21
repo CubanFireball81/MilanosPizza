@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>Milano's Pizza</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="mp-top mp-hide-small" id="Navbar">
+  <div class="mp-bar mp-xlarge mp-black mp-opacity mp-hover-opacity-off" id="myNavbar">
+    <a href="#" class="mp-bar-item mp-button mp-text-orange">HOME</a>
+    <a href="#menu" class="mp-bar-item mp-button mp-text-orange">MENU</a>
+    <a href="#about" class="mp-bar-item mp-button mp-text-orange">ABOUT</a>
+    <a href="#contact" class="mp-bar-item mp-button mp-text-orange">CONTACT</a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg mp-display-container mp-grayscale-min" id="home">
+  <div class="mp-display-bottomleft mp-padding bounce">
+    <span class="mp-tag mp-xlarge mp-text-blue"><a
+      href="https://www.facebook.com/Milanos-Pizzeria-and-Philly-Steaks-104926089550896/"
+      target="_blank" rel="noopener noreferrer"><img src="./Images/facebook.svg" alt="Facebook Icon" id="Facebook"/></a></span>
+  </div>
+  <div class="mp-display-middle mp-center">
+    <span class="mp-text-orange mp-hide-small text-shadow" style="font-size:250px">Milano's Pizzaria</span>
+    <span class="mp-text-orange mp-hide-large mp-hide-medium text-shadow" style="font-size:60px"><strong>Milano's Pizzaria</strong></span>
+    <p><a href="MenuPDF/Menus.pdf" download class="mp-button mp-xxlarge mp-black mp-text-orange">Download our menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="mp-container mp-black mp-padding-64 mp-xxlarge" id="menu">
+  <div class="mp-content">
+    <h1 class="mp-center mp-text-orange mp-jumbo" style="margin-bottom:64px">Milano's House Specials</h1>
+    <div class="mp-row mp-center mp-border mp-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizzas');" id="myLink">
+        <div class="mp-col s3 tablink mp-padding-large mp-hover-orange">Pizzas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pastas');">
+        <div class="mp-col s3 tablink mp-padding-large mp-hover-orange">Pastas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Salads');">
+        <div class="mp-col s3 tablink mp-padding-large mp-hover-orange">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sandwiches');">
+        <div class="mp-col s3 tablink mp-padding-large mp-hover-orange">Sandwiches</div>
+      </a>
+    </div>
+
+    <!--Pizza Menu Items-->
+
+    <div id="Pizzas" class="mp-container menu mp-padding-32 mp-white myText">
+      <h1><strong>Special #1</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$30.95</span></h1>
+      <p class="mp-text-orange">1 Large 16" Pizza with 3 toppings, Greek Salad for two, and a 2-liter Soda</p>
+      <hr>
+
+      <h1><strong>Special #2: Greek Dinner for Two</strong> <span class="mp-tag mp-red mp-round">Popular!</span><span class="mp-right mp-tag mp-dark-grey mp-round">$30.95</span></h1><p class="mp-text-orange">1 Greek Gyro, 1 Chicken Gyro, Greek Salad for two and a 2-liter Soda</p>
+      <hr>
+
+      <h1><strong>Special #3</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$34.95</span></h1>
+      <p class="mp-text-orange">1 Large 16" Pizza with 2 toppings, Caesar Salad for two, 1 Philly Cheesesteak, and a 2-liter Soda</p>
+      <hr>
+
+      <h1><strong>Special #4</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$29.95</span></h1>
+      <p class="mp-text-orange">1 Large 16" Pizza with 2 toppings, 10 Chicken Wings, and a 2-liter Soda</p>
+      <hr>
+
+      <h1><strong>Special #5: Italian Dinner for Two</strong> <span class="mp-tag mp-red mp-round">Popular!</span><span class="mp-right mp-tag mp-dark-grey mp-round">$30.95</span></h1>
+      <p class="mp-text-orange">1 Spaghetti, 1 Lasagna, Garlic Bread, Caesar Salad for two, and a 2-liter of Soda</p>
+      <hr>
+
+      <h1><strong>Special #6</strong> <span class="mp-tag mp-red mp-round">Favorite!</span><span
+          class="mp-right mp-tag mp-dark-grey mp-round">$31.95</span></h1>
+      <p class="mp-text-orange">2 Large 16" Pizzas: 1 topping per pizza, and a 2-liter Soda</p>
+      <hr>
+
+      <h1><strong>Special #7</strong> <span class="mp-tag mp-red mp-round">Favorite!</span></span><span
+          class="mp-right mp-tag mp-dark-grey mp-round">$28.95</span></h1>
+      <p class="mp-text-orange">1 Large 16" Pizza: 1 topping, Caesar Salad for two, Garlic Bread, and a 2-liter Soda</p>
+      <hr>
+
+      <h1><strong>Special #8</strong><span class="mp-right mp-tag mp-dark-grey mp-round">$29.95</span></h1>
+      <p class="mp-text-orange">1 Large 16" Pizza: 1 topping, 5 Chicken Strips with French Fries, Garlic Bread, and a 2-liter Soda</p>
+    </div>
+
+    <!--Pasta Menu Items-->
+
+    <div id="Pastas" class="mp-container menu mp-padding-32 mp-white myText">
+      <h1><strong>Homemade Spaghetti with Meat Sauce</strong> <span class="mp-tag mp-red mp-round">Popular</span> <span class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Add Meatballs or Sausage for an additional $3.00</p>
+      <hr>
+
+      <h1><strong>Lasagna</strong> <span class="mp-tag mp-red mp-round">Favorite!</span><span class="mp-right mp-tag mp-dark-grey mp-round">$13.95</span></h1>
+      <p class="mp-text-orange">Our delicious 3 cheese, meat filled lasagna topped with meat sauce and melted Mozzarella Cheese. Served with Garlic Bread.</p>
+    </div>
+    
+    <!--Salads-->
+    <div id="Salads" class="mp-container menu mp-padding-32 mp-white myText">
+      <h1><strong>Greek Salad</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$13.95</span></h1>
+      <p class="mp-text-orange">Crisp Lettuce, Kalamata Olives, Greek Pepperoncini Peppers, Fresh Tomatoes, Onions, Green Peppers, Pepperoni, Italian Salami. Topped with Feta Cheese and House Dressing.</p>
+      <hr>
+
+      <h1><strong>Chicken Caesar Salad</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$13.95</span></h1>
+      <p class="mp-text-orange">Always made fresh from quality ingredients!</p>
+      <hr>
+
+      <h1><strong>Caesar Salad</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$10.95</span></h1>
+      <p class="mp-text-orange">Always made fresh from quality ingredients!</p>
+      <hr>
+
+      <h1><strong>Mediterranean Shrimp Caesar</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$13.95</span></h1>
+      <p class="mp-text-orange">Always made fresh from quality ingredients!</p>
+      <hr>
+
+      <h1><strong>Dinner Salad</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$4.95</span></h1>
+      <p class="mp-text-orange">Always made fresh from quality ingredients!</p>
+    </div>
+
+    <!--Sandwiches Menu Items-->
+    
+    <div id="Sandwiches" class="mp-container menu mp-padding-32 mp-white myText">
+      <h1><strong>Philly Bomb</strong> <span class="mp-tag mp-red mp-round">New!</span> <span
+          class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Delicious steak served with Swiss Cheese, Geneva Salami, Onions, Green Peppers, Mushrooms, and Black Olives</p>
+      <hr>
+    
+      <h1><strong>Philadelphia</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Delicious steak served with Swiss Cheese, Onions, Green Peppers, and Mushrooms</p>
+      <hr>
+    
+      <h1><strong>Philly Mushroom Cheesesteak</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Delicious steak served with Swiss Cheese and a generous helping of Mushrooms</p>
+      <hr>
+    
+      <h1><strong>Philly Pepper Cheesesteak<strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Delicious steak served with Swiss Cheese and a generous helping of Sweet or Hot Peppers</p>
+
+      <h1><strong>Milano's Philly Cheesesteak</strong> <span class="mp-tag mp-red mp-round">Favorite!</span> <span
+          class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Delicious steak served with Swiss Cheese, Lettuce, and Tomatoes</p>
+      <hr>
+      
+      <h1><strong>Create Your Own Philly</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Create your own delicious Philly using any 3 ingredients. Only $3.00 for double meat and $0.50 for additional toppings. (A1 and Teriyaki sauces are available upon request.)</p>
+      <hr>
+      
+      <h1 style="color: red"><strong>Check out our menu for more Sandwiches and Delicious Calzones!</strong></h1>
+      <hr>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="mp-container mp-padding-64 mp-white mp-grayscale mp-xlarge" id="about">
+  <div class="mp-content">
+    <h1 class="mp-center mp-jumbo" style="margin-bottom:64px">About</h1>
+    <p>When people think of Milano's style Pizza, they think of a lot more than just pizza.
+      Our menu has a variety of items on it to please anyone in your family.
+      Free Delivery!
+      (minimum delivery $10.00)</p>
+    <p>Every morning Milano's chefs prepare sliced Top Sirloin and fresh vegetables grilled to perfection. They do this everyday so our customers can enjoy an irresistibility fresh taste with every meal!</p>
+    <p class="mp-center">We are proud of our community and love each and every one of of patrons. Without you, we would not have survived for so long.</p>
+    <img src="Images/milanos.jpg" style="width:100%" class="mp-margin-top mp-margin-bottom milanos" alt="Restaurant">
+    <h1 class="mp-center mp-text-orange"><strong>Hours of Operation:</strong></h1>
+
+    <div class="mp-row">
+      <div class="mp-col s6">
+        <p>Monday: 11AM to 11PM</p>
+        <p>Tuesday: 11AM to 11PM</p>
+        <p>Wednesday: 11AM to 11PM</p>
+        <p>Thursday: 11AM to 11PM</p>
+      </div>
+      <div class="mp-col s6">
+        <p>Friday: 11AM to 12AM</p>
+        <p>Saturday: 11AM to 12PM</p>
+        <p>Sunday: 11AM to 11PM</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="mp-container mp-padding-64 mp-orange mp-grayscale-min mp-xlarge" id="contact">
+  <div class="mp-content">
+    <h1 class="mp-center mp-jumbo" style="margin-bottom:64px">Contact Us</h1>
+    <h3 class="mp-center">Visit us at: 1207 W 36th Ave, Anchorage, AK 99503 or call us at (907) 569-6000</h3>
+    <p style="text-align: center;"><iframe class="mymaps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1186.7379509345765!2d-149.90761864237203!3d61.18842508234753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c897dd52049315%3A0xa23d2d18645910aa!2s1207%20W%2036th%20Ave%2C%20Anchorage%2C%20AK%2099503!5e1!3m2!1sen!2sus!4v1635552862190!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" title="Map" loading="lazy"></iframe></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="mp-center mp-black mp-padding-48 mp-xxlarge">
+  <p>We care about our community! Thank you for choosing us!</p>
+</footer>
+<!--Scripts-->
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" mp-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " mp-red";
+}
+document.getElementById("myLink").click();
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
