@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<body>
 
+
+<body>
 <!-- Navbar (sit on top) -->
 <div class="mp-top mp-hide-small" id="Navbar">
   <div class="mp-bar mp-xlarge mp-black mp-opacity mp-hover-opacity-off" id="myNavbar">
@@ -26,85 +27,129 @@
   </div>
   <div class="mp-display-middle mp-center">
     <span class="mp-text-orange mp-hide-small text-shadow" style="font-size:250px">Milano's Pizzaria</span>
-    <span class="mp-text-orange mp-hide-large mp-hide-medium text-shadow" style="font-size:60px"><b>Milano's Pizzaria</b></span>
-    <p><a href="MenuPDF/Menus.pdf" download class="mp-button mp-xxlarge mp-black mp-text-orange">Click to download our menu</a></p>
+    <span class="mp-text-orange mp-hide-large mp-hide-medium text-shadow" style="font-size:60px"><strong>Milano's Pizzaria</strong></span>
+    <p><a href="MenuPDF/Menus.pdf" download class="mp-button mp-xxlarge mp-black mp-text-orange">Download our menu</a></p>
   </div>
 </header>
 
 <!-- Menu Container -->
 <div class="mp-container mp-black mp-padding-64 mp-xxlarge" id="menu">
   <div class="mp-content">
-    <h1 class="mp-center mp-text-orange mp-jumbo" style="margin-bottom:64px">Our Customer Favorites</h1>
+    <h1 class="mp-center mp-text-orange mp-jumbo" style="margin-bottom:64px">Milano's House Specials</h1>
     <div class="mp-row mp-center mp-border mp-border-dark-grey">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
-        <div class="mp-col s4 tablink mp-padding-large mp-hover-orange">Pizza</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizzas');" id="myLink">
+        <div class="mp-col s3 tablink mp-padding-large mp-hover-orange">Pizzas</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-        <div class="mp-col s4 tablink mp-padding-large mp-hover-orange">Salads</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pastas');">
+        <div class="mp-col s3 tablink mp-padding-large mp-hover-orange">Pastas</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="mp-col s4 tablink mp-padding-large mp-hover-orange">Starter</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Salads');">
+        <div class="mp-col s3 tablink mp-padding-large mp-hover-orange">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sandwiches');">
+        <div class="mp-col s3 tablink mp-padding-large mp-hover-orange">Sandwiches</div>
       </a>
     </div>
 
-    <div id="Pizza" class="mp-container menu mp-padding-32 mp-white">
-      <h1><b>Margherita</b> <span class="mp-right mp-tag mp-dark-grey mp-round">$12.50</span></h1>
-      <p class="mp-text-orange">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+    <!--Pizza Menu Items-->
+
+    <div id="Pizzas" class="mp-container menu mp-padding-32 mp-white myText">
+      <h1><strong>Special #1</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$30.95</span></h1>
+      <p class="mp-text-orange">1 Large 16" Pizza with 3 toppings, Greek Salad for two, and a 2-liter Soda</p>
       <hr>
 
-      <h1><b>Formaggio</b> <span class="mp-right mp-tag mp-dark-grey mp-round">$15.50</span></h1>
-      <p class="mp-text-orange">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <h1><strong>Special #2: Greek Dinner for Two</strong> <span class="mp-tag mp-red mp-round">Popular!</span><span class="mp-right mp-tag mp-dark-grey mp-round">$30.95</span></h1><p class="mp-text-orange">1 Greek Gyro, 1 Chicken Gyro, Greek Salad for two and a 2-liter Soda</p>
       <hr>
 
-      <h1><b>Chicken</b> <span class="mp-right mp-tag mp-dark-grey mp-round">$17.00</span></h1>
-      <p class="mp-text-orange">Fresh tomatoes, mozzarella, chicken, onions</p>
+      <h1><strong>Special #3</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$34.95</span></h1>
+      <p class="mp-text-orange">1 Large 16" Pizza with 2 toppings, Caesar Salad for two, 1 Philly Cheesesteak, and a 2-liter Soda</p>
       <hr>
 
-      <h1><b>Pineapple'o'clock</b> <span class="mp-right mp-tag mp-dark-grey mp-round">$16.50</span></h1>
-      <p class="mp-text-orange">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <h1><strong>Special #4</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$29.95</span></h1>
+      <p class="mp-text-orange">1 Large 16" Pizza with 2 toppings, 10 Chicken Wings, and a 2-liter Soda</p>
       <hr>
 
-      <h1><b>Meat Town</b> <span class="mp-tag mp-red mp-round">Hot!</span><span class="mp-right mp-tag mp-dark-grey mp-round">$20.00</span></h1>
-      <p class="mp-text-orange">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <h1><strong>Special #5: Italian Dinner for Two</strong> <span class="mp-tag mp-red mp-round">Popular!</span><span class="mp-right mp-tag mp-dark-grey mp-round">$30.95</span></h1>
+      <p class="mp-text-orange">1 Spaghetti, 1 Lasagna, Garlic Bread, Caesar Salad for two, and a 2-liter of Soda</p>
       <hr>
 
-      <h1><b>Parma</b> <span class="mp-tag mp-grey mp-round">New</span><span class="mp-right mp-tag mp-dark-grey mp-round">$21.50</span></h1>
-      <p class="mp-text-orange">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+      <h1><strong>Special #6</strong> <span class="mp-tag mp-red mp-round">Favorite!</span><span
+          class="mp-right mp-tag mp-dark-grey mp-round">$31.95</span></h1>
+      <p class="mp-text-orange">2 Large 16" Pizzas: 1 topping per pizza, and a 2-liter Soda</p>
+      <hr>
+
+      <h1><strong>Special #7</strong> <span class="mp-tag mp-red mp-round">Favorite!</span></span><span
+          class="mp-right mp-tag mp-dark-grey mp-round">$28.95</span></h1>
+      <p class="mp-text-orange">1 Large 16" Pizza: 1 topping, Caesar Salad for two, Garlic Bread, and a 2-liter Soda</p>
+      <hr>
+
+      <h1><strong>Special #8</strong><span class="mp-right mp-tag mp-dark-grey mp-round">$29.95</span></h1>
+      <p class="mp-text-orange">1 Large 16" Pizza: 1 topping, 5 Chicken Strips with French Fries, Garlic Bread, and a 2-liter Soda</p>
     </div>
 
-    <div id="Pasta" class="mp-container menu mp-padding-32 mp-white">
-      <h1><b>Lasagna</b> <span class="mp-tag mp-grey mp-round">Popular</span> <span class="mp-right mp-tag mp-dark-grey mp-round">$13.50</span></h1>
-      <p class="mp-text-orange">Special sauce, mozzarella, parmesan, ground beef</p>
+    <!--Pasta Menu Items-->
+
+    <div id="Pastas" class="mp-container menu mp-padding-32 mp-white myText">
+      <h1><strong>Homemade Spaghetti with Meat Sauce</strong> <span class="mp-tag mp-red mp-round">Popular</span> <span class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Add Meatballs or Sausage for an additional $3.00</p>
       <hr>
 
-      <h1><b>Ravioli</b> <span class="mp-right mp-tag mp-dark-grey mp-round">$14.50</span></h1>
-      <p class="mp-text-orange">Ravioli filled with cheese</p>
+      <h1><strong>Lasagna</strong> <span class="mp-tag mp-red mp-round">Favorite!</span><span class="mp-right mp-tag mp-dark-grey mp-round">$13.95</span></h1>
+      <p class="mp-text-orange">Our delicious 3 cheese, meat filled lasagna topped with meat sauce and melted Mozzarella Cheese. Served with Garlic Bread.</p>
+    </div>
+    
+    <!--Salads-->
+    <div id="Salads" class="mp-container menu mp-padding-32 mp-white myText">
+      <h1><strong>Greek Salad</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$13.95</span></h1>
+      <p class="mp-text-orange">Crisp Lettuce, Kalamata Olives, Greek Pepperoncini Peppers, Fresh Tomatoes, Onions, Green Peppers, Pepperoni, Italian Salami. Topped with Feta Cheese and House Dressing.</p>
       <hr>
 
-      <h1><b>Spaghetti Classica</b> <span class="mp-right mp-tag mp-dark-grey mp-round">$11.00</span></h1>
-      <p class="mp-text-orange">Fresh tomatoes, onions, ground beef</p>
+      <h1><strong>Chicken Caesar Salad</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$13.95</span></h1>
+      <p class="mp-text-orange">Always made fresh from quality ingredients!</p>
       <hr>
 
-      <h1><b>Seafood pasta</b> <span class="mp-right mp-tag mp-dark-grey mp-round">$25.50</span></h1>
-      <p class="mp-text-orange">Salmon, shrimp, lobster, garlic</p>
+      <h1><strong>Caesar Salad</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$10.95</span></h1>
+      <p class="mp-text-orange">Always made fresh from quality ingredients!</p>
+      <hr>
+
+      <h1><strong>Mediterranean Shrimp Caesar</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$13.95</span></h1>
+      <p class="mp-text-orange">Always made fresh from quality ingredients!</p>
+      <hr>
+
+      <h1><strong>Dinner Salad</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$4.95</span></h1>
+      <p class="mp-text-orange">Always made fresh from quality ingredients!</p>
     </div>
 
-
-    <div id="Starter" class="mp-container menu mp-padding-32 mp-white">
-      <h1><b>Today's Soup</b> <span class="mp-tag mp-grey mp-round">Seasonal</span><span class="mp-right mp-tag mp-dark-grey mp-round">$5.50</span></h1>
-      <p class="mp-text-orange">Ask the waiter</p>
+    <!--Sandwiches Menu Items-->
+    
+    <div id="Sandwiches" class="mp-container menu mp-padding-32 mp-white myText">
+      <h1><strong>Philly Bomb</strong> <span class="mp-tag mp-red mp-round">New!</span> <span
+          class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Delicious steak served with Swiss Cheese, Geneva Salami, Onions, Green Peppers, Mushrooms, and Black Olives</p>
       <hr>
-
-      <h1><b>Bruschetta</b> <span class="mp-right mp-tag mp-dark-grey mp-round">$8.50</span></h1>
-      <p class="mp-text-orange">Bread with pesto, tomatoes, onion, garlic</p>
+    
+      <h1><strong>Philadelphia</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Delicious steak served with Swiss Cheese, Onions, Green Peppers, and Mushrooms</p>
       <hr>
-
-      <h1><b>Garlic bread</b> <span class="mp-right mp-tag mp-dark-grey mp-round">$9.50</span></h1>
-      <p class="mp-text-orange">Grilled ciabatta, garlic butter, onions</p>
+    
+      <h1><strong>Philly Mushroom Cheesesteak</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Delicious steak served with Swiss Cheese and a generous helping of Mushrooms</p>
       <hr>
+    
+      <h1><strong>Philly Pepper Cheesesteak<strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Delicious steak served with Swiss Cheese and a generous helping of Sweet or Hot Peppers</p>
 
-      <h1><b>Tomozzarella</b> <span class="mp-right mp-tag mp-dark-grey mp-round">$10.50</span></h1>
-      <p class="mp-text-orange">Tomatoes and mozzarella</p>
+      <h1><strong>Milano's Philly Cheesesteak</strong> <span class="mp-tag mp-red mp-round">Favorite!</span> <span
+          class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Delicious steak served with Swiss Cheese, Lettuce, and Tomatoes</p>
+      <hr>
+      
+      <h1><strong>Create Your Own Philly</strong> <span class="mp-right mp-tag mp-dark-grey mp-round">$12.95</span></h1>
+      <p class="mp-text-orange">Create your own delicious Philly using any 3 ingredients. Only $3.00 for double meat and $0.50 for additional toppings. (A1 and Teriyaki sauces are available upon request.)</p>
+      <hr>
+      
+      <h1 style="color: red"><strong>Check out our menu for more Sandwiches and Delicious Calzones!</strong></h1>
+      <hr>
     </div><br>
 
   </div>
@@ -118,10 +163,10 @@
       Our menu has a variety of items on it to please anyone in your family.
       Free Delivery!
       (minimum delivery $10.00)</p>
-    <p><strong>The Chef?</strong> You will have to stop in and find out for yourself. All we can say is, you won't be disappointed!</p>
+    <p>Every morning Milano's chefs prepare sliced Top Sirloin and fresh vegetables grilled to perfection. They do this everyday so our customers can enjoy an irresistibility fresh taste with every meal!</p>
     <p class="mp-center">We are proud of our community and love each and every one of of patrons. Without you, we would not have survived for so long.</p>
     <img src="Images/milanos.jpg" style="width:100%" class="mp-margin-top mp-margin-bottom milanos" alt="Restaurant">
-    <h1 class="mp-center mp-text-orange"><b>Hours of Operation:</b></h1>
+    <h1 class="mp-center mp-text-orange"><strong>Hours of Operation:</strong></h1>
 
     <div class="mp-row">
       <div class="mp-col s6">
@@ -145,7 +190,7 @@
   <div class="mp-content">
     <h1 class="mp-center mp-jumbo" style="margin-bottom:64px">Contact Us</h1>
     <h3 class="mp-center">Visit us at: 1207 W 36th Ave, Anchorage, AK 99503 or call us at (907) 569-6000</h3>
-    <p align="center"><iframe class="mymaps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1186.7379509345765!2d-149.90761864237203!3d61.18842508234753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c897dd52049315%3A0xa23d2d18645910aa!2s1207%20W%2036th%20Ave%2C%20Anchorage%2C%20AK%2099503!5e1!3m2!1sen!2sus!4v1635552862190!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+    <p style="text-align: center;"><iframe class="mymaps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1186.7379509345765!2d-149.90761864237203!3d61.18842508234753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c897dd52049315%3A0xa23d2d18645910aa!2s1207%20W%2036th%20Ave%2C%20Anchorage%2C%20AK%2099503!5e1!3m2!1sen!2sus!4v1635552862190!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" title="Map" loading="lazy"></iframe></p>
   </div>
 </div>
 
@@ -160,11 +205,11 @@ function openMenu(evt, menuName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
+    x[i].style.display = "none";
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" mp-red", "");
+    tablinks[i].className = tablinks[i].className.replace(" mp-red", "");
   }
   document.getElementById(menuName).style.display = "block";
   evt.currentTarget.firstElementChild.className += " mp-red";
