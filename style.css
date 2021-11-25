@@ -386,12 +386,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Lobster', cursive;}
     width: 15px;
     font-size: 20px;
   }
-  #Pizzas {
+  #Pizzas, #Pastas, #Salads, #Sandwiches {
     font-size: 12px;
   }
-  #Pizzas h1 {
+  #Pizzas h1, #Pastas h1, #Salads h1, #Sandwiches h1 {
     font-size: 14px;
   }
+
   .s3 {
     font-size: 12px;
     
