@@ -290,6 +290,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Lobster', cursive;}
   min-height: 90%;
 }
 
+#myNavbar {
+  font-size: 24px;
+}
+
 #main-text {
   font-size: 250px;
 }
@@ -313,6 +317,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Lobster', cursive;}
   position: fixed;
 }
 
+/*========== Hamburger Menu for Mobile Screens =============*/
+/* Style the navigation menu */
+
+
+
 
 /*================ Media Query ============*/
 /*========== Tablet Sized Screens ==========*/
@@ -333,7 +342,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Lobster', cursive;}
   #Pizzas h1 {
     font-size: 25px;
   }
-
+  #myNavbar {
+  font-size: 24px;
+  }
+  .download-button {
+  width: auto;
+  }
 }
 
 /*========== Smaller tablet screens ==============*/
@@ -354,6 +368,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Lobster', cursive;}
   #Pizzas h1 {
     font-size: 25px;
   }
+  #myNavbar {
+  font-size: 22px;
+}
+
 }
 
 /*================== Phone Screens =================*/
@@ -377,6 +395,45 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Lobster', cursive;}
   .s3 {
     font-size: 12px;
     
+  }
+  #myNavbar {
+    font-size: 20px;
+    width: auto;
+  }
+  .mp-top {
+    position: absolute;
+  }
+
+  @media screen and (max-width: 370px) {
+  #main-text {
+    font-size: 100px;
+    padding-right: 15px;
+  }
+  .mymaps {
+    width: auto;
+  }
+  .tablink {
+    width: 15px;
+    font-size: 20px;
+  }
+  #Pizzas, #Pastas, #Salads, #Sandwiches {
+    font-size: 12px;
+  }
+  #Pizzas h1, #Pastas h1, #Salads h1, #Sandwiches h1 {
+    font-size: 14px;
+  }
+  .s3 {
+    font-size: 12px;
+  }
+  #myNavbar {
+    font-size: 18px;
+    width: auto;
+  }
+  .mp-top {
+    position: absolute;
+  }
+  .download-button {
+    width: auto;
   }
 }
 
